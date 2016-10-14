@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Swiper 3.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1857,8 +1858,8 @@ Copyright (c) 2015 Daniel Eden
   0% {
     -webkit-transform-origin: center;
     transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    -webkit-transform: rotate3d(0, 0, 1, -100deg);
+    transform: rotate3d(0, 0, 1, -100deg);
     opacity: 0; }
   100% {
     -webkit-transform-origin: center;
@@ -1871,8 +1872,8 @@ Copyright (c) 2015 Daniel Eden
   0% {
     -webkit-transform-origin: center;
     transform-origin: center;
-    -webkit-transform: rotate3d(0, 0, 1, -200deg);
-    transform: rotate3d(0, 0, 1, -200deg);
+    -webkit-transform: rotate3d(0, 0, 1, -100deg);
+    transform: rotate3d(0, 0, 1, -100deg);
     opacity: 0; }
   100% {
     -webkit-transform-origin: center;
@@ -2731,6 +2732,7 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+/*==================================*/
 .turnInDown {
   -webkit-animation-name: turnInDown;
   animation-name: turnInDown; }
@@ -2759,17 +2761,75 @@ Copyright (c) 2015 Daniel Eden
     filter: alpha(opacity=100);
     transform-origin: 50% 0; } }
 
-html, body, h2 {
+.rotateself {
+  -webkit-animation-name: rotateself;
+  animation-name: rotateself; }
+
+@-webkit-keyframes rotateself {
+  0% {
+    -webkit-transform: translateX(-100%) rotate(-180deg); }
+  100% {
+    -webkit-transform: translateX(0px) rotateX(0deg); } }
+
+@keyframes rotateself {
+  0% {
+    transform: translateX(-100%) rotate(-180deg); }
+  100% {
+    transform: translateX(0px) rotateX(0deg); } }
+
+.rotateIn-2 {
+  -webkit-animation-name: rotateIn-2;
+  animation-name: rotateIn-2; }
+
+@-webkit-keyframes rotateIn-2 {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 2200deg);
+    transform: rotate3d(0, 0, 1, 2200deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+@keyframes rotateIn-2 {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 2200deg);
+    transform: rotate3d(0, 0, 1, 2200deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1; } }
+
+html, body, h2，ul, li, h4, p {
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  /*以上三个是处理移动端a标签tap时有阴影*/
+  color: #333;
+  /*点击会变红，设置颜色后就不变了*/ }
+
+/*上面是样式重置*/
 html, body {
   position: relative;
   height: 100%; }
 
 body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "微软雅黑", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -2803,6 +2863,52 @@ body {
   box-sizing: border-box;
   padding-right: 10px; }
 
+.swiper-container .swiper-wrapper .swiper-slide #enter {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  background: #b50;
+  border-radius: 8px;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-weight: 900;
+  position: absolute;
+  bottom: 8%;
+  margin-left: -50px; }
+
+#preload {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #EE82EE;
+  padding-top: 200px;
+  font-size: 50px;
+  text-align: center;
+  color: #fff; }
+  #preload div {
+    width: 30px;
+    height: 30px;
+    background-color: #67CF22;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: bouncedelay 1.4s infinite ease-in-out;
+    animation: bouncedelay 1.4s infinite ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  #preload .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s; }
+  #preload .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s; }
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0); }
+  40% {
+    -webkit-transform: scale(1); } }
+
 #swiper-one {
   width: 100%;
   height: 100%;
@@ -2810,60 +2916,214 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   background-origin: content-box; }
+  #swiper-one .swiper-one-pic {
+    width: 100%;
+    height: 200px;
+    margin-top: 80px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 25px; }
+    #swiper-one .swiper-one-pic img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      padding: 5px;
+      border: 3px solid #abcdef; }
+  #swiper-one .swiper-one-txt {
+    margin-top: 50px;
+    color: #fff; }
 
 h2 {
-  padding-top: 30px;
-  color: #fff; }
-
-.swiper-one-pic {
-  width: 100%;
-  height: 200px;
-  margin-top: 80px;
-  overflow: hidden;
-  text-align: center;
-  padding-top: 25px; }
-
-.swiper-one-pic img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  padding: 5px;
-  border: 3px solid #abcdef; }
-
-.swiper-one-txt {
-  margin-top: 50px;
-  color: #fff; }
+  padding-top: 10px;
+  color: #fff;
+  font-size: 26px; }
 
 #swiper-two {
   width: 100%;
   height: 100%;
-  background: #a58;
+  color: #800;
+  z-index: 2; }
+  #swiper-two .swiper-two-list {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 900;
+    flex-flow: row wrap; }
+    #swiper-two .swiper-two-list .swiper-two-lists {
+      width: 50%;
+      height: 200px;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden; }
+      #swiper-two .swiper-two-list .swiper-two-lists img {
+        width: auto;
+        height: 78px; }
+      #swiper-two .swiper-two-list .swiper-two-lists span {
+        display: block;
+        width: 100%; }
+      #swiper-two .swiper-two-list .swiper-two-lists p {
+        width: 100%; }
+
+.swiper-two-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0.6; }
+  .swiper-two-bg .swiper-two-opacity {
+    width: 100%;
+    height: 100%;
+    background: url(../images/swiper-three-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-origin: content-box; }
+
+#swiper-three {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  font-size: 14px; }
+  #swiper-three .swiper-three {
+    width: 100%; }
+    #swiper-three .swiper-three .swiper-top {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #swiper-three .swiper-three .swiper-top a {
+        flex: 1; }
+        #swiper-three .swiper-three .swiper-top a img {
+          width: 50px; }
+        #swiper-three .swiper-three .swiper-top a h4 {
+          color: #444; }
+    #swiper-three .swiper-three .swiper-bottom {
+      width: 100%;
+      height: 320px;
+      text-align: left;
+      text-indent: 20px;
+      padding: 10px 10px 0;
+      line-height: 20px;
+      color: #333;
+      animation: txt-animation 4s linear;
+      overflow: hidden; }
+
+@keyframes txt-animation {
+  0% {
+    height: 0; }
+  100% {
+    height: 320px; } }
+
+.swiper-three-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0.6; }
+  .swiper-three-bg .swiper-three-opacity {
+    width: 100%;
+    height: 100%;
+    background: url(../images/swiper-two-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-origin: content-box; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  -ms-touch-action: none; }
+
+body {
+  font-size: 12px;
+  overflow: hidden;
+  /* this is important to prevent the whole page to bounce */ }
+
+#header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background: #CD235C;
+  padding: 0;
+  color: #eee;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold; }
+
+#footer {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: #444;
+  padding: 0;
+  border-top: 1px solid #444;
+  display: flex;
+  align-items: center; }
+
+#footer .button {
+  flex: 1;
+  text-align: center;
   color: #fff; }
 
-#swiper-two .swiper-two-list {
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 45px;
+  bottom: 48px;
+  left: 0;
   width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  flex-flow: row wrap; }
-
-#swiper-two .swiper-two-list .swiper-two-lists {
-  width: 50%;
-  height: 200px;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+  background: #ccc;
   overflow: hidden; }
 
-#swiper-two .swiper-two-list .swiper-two-lists span {
-  display: block;
-  width: 100%; }
+#scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none; }
 
-.swiper-container .swiper-wrapper .swiper-slide button {
-  background: #abcdef; }
+#scroller ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left; }
+
+#scroller li {
+  padding: 0 10px;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #fff;
+  background-color: #fafafa;
+  font-size: 12px; }

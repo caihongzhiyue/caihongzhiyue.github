@@ -2,30 +2,106 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>个人简历</title>
-	<style>
-	    *{
-    		margin: 0;
-    		padding: 0;
-		}
-	    html, body {
-   		position: relative;
-    		height: 100%;
-		}
-	    a{
-		display: block;
-   		width: 100%;
-    		height: 100%;
-    		background: #abcdef;
-	    	padding-top: 200px;
-	    	font-size: 50px;
-	    	text-align: center;
-	    	color: #fff;
-		text-decoration:none;  
-		}	
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/index-5188a9a677.css">
 </head>
 <body>
-	<a href="www/index.html">点击</a>
+    <div id="preload">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+        <p class="preload-txt">loading</p>
+    </div>
+	<!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+				<div id="swiper-one">
+                    <h2 class="ani" swiper-animate-effect="turnInDown" swiper-animate-duration="1s">个人简历</h2>
+                    <div class="swiper-one-pic ani" swiper-animate-effect="rotateself" swiper-animate-duration="2s"><img src="images/1.jpg" /></div>
+                    <div class="swiper-one-txt ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="2s">寻求一份前端工程师的工作</div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-two-bg"><div class="swiper-two-opacity"></div></div>
+                <div id="swiper-two">
+                    <h2 class="ani" swiper-animate-effect="swing" swiper-animate-duration="2s">基本资料</h2>
+                    <div class="swiper-two-list">
+                        <div class="swiper-two-lists">
+                            <img src="images/glass.png" width="100" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.2s">
+                            <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s">基本信息</p>
+                            <span class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s">姓名:郭志迪 男</span>
+                            <span class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s">年龄:25岁 家乡:河南</span>
+                        </div>
+                        <div class="swiper-two-lists">
+                            <img src="images/hat.png" width="100" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.2s" swiper-animate-delay="1s">
+                            <p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">毕业院校</p>
+                            <span class="ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">河南理工大学</span>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="swiper-two-lists">
+                            <img src="images/book.png" width="100" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.2s" swiper-animate-delay="2s">
+                            <p class="ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="1s" swiper-animate-delay="2s">学历和技能</p>
+                            <span class="ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">学历:本科</span>
+                            <span class="ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">技能:编程</span>
+                            <span>&nbsp;</span>
+                        </div>
+                        <div class="swiper-two-lists">
+                            <img src="images/tel.png" width="100" class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.2s" swiper-animate-delay="3s">
+                            <p class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">联系方式</p>
+                            <span class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="3s">电话:150****8256</span>
+                            <span class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">Email:190977235<br>2@qq.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-three-bg"><div class="swiper-three-opacity"></div></div>
+                <div id="swiper-three">
+                    <h2 class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s">专业技能</h2>
+                    <div class="swiper-three">
+                        <div class="swiper-top">
+                            <a href="javascript:;"><img src="images/tv.png"><h4>PC端</h4></a>
+                            <a href="javascript:;"><img src="images/apple.png"><h4>手机端</h4></a>
+                            <a href="javascript:;"><img src="images/baterry.png"><h4>其他</h4></a>
+                        </div>
+                        <div class="swiper-bottom">
+                            <p>1.熟练使用 Html5 Css3 JavaScript，能够合理完成web端或者移动端页面的编写和维护。</p>
+                            <p> 2.思路清晰，结构完整，易于维护和持久化开发，能处理主流浏览器兼容问题。熟练使用原生js，了解js面向对象原理，闭包以及原型结构，能够合理利用面向对象以及模块化开发，并且能适当完成框架封装。</p>
+                            <p>3.熟练使用 jQuery，并能完成相关项目。</p>
+                            <p>4.熟悉animation fullpage jquery-ui template lazyload jQeasing masonry等实用插件的应用</p>
+                            <p>5.轮播图，tab栏，瀑布流，延迟加载，全屏滚动等等常用功能的实现</p>
+                            <p>6.掌握 Ajax交互原理，根据后台接口能够合理完成前后台交互，数据的增删改查</p> 
+                        </div>
+                    </div>
+                    <button id="enter" class="ani" swiper-animate-effect="rotateIn-2" swiper-animate-duration="1s"  swiper-animate-delay="2s">进入主页</button>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div id="mainContent">
+        <div id="header">iScroll</div>
+
+        <div id="wrapper">
+            <div id="scroller">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="button" id="skill">技能</div>
+            <div class="button" id="project">作品</div>
+            <div class="button" id="work">经历</div>
+            <div class="button" id="">兴趣</div>
+            <div class="button" id="">我的</div>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/index-5632777df5.js"></script>
 </body>
 </html>
