@@ -1,128 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>个人简历</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Angular和Bootstrap整合项目</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-    <div id="preload">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-        <p class="preload-txt">loading</p>
-    </div>
-	<!-- Swiper -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-				<div id="swiper-one">
-                    <h2 class="ani" swiper-animate-effect="turnInDown" swiper-animate-duration="1s">个人简历</h2>
-                    <div class="xuanzhuan"></div>
-                    <div class="swiper-one-pic ani" swiper-animate-effect="rotateself" swiper-animate-duration="2s">
-                        <em class="iconfont ani" swiper-animate-effect="fadeOut" swiper-animate-duration="1s" swiper-animate-delay="2s">&#xe617;</em>
-                        <em class="iconfont ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2.2s">&#xe645;</em>
-                    </div>
-                    <p class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s"  swiper-animate-delay="2.5s">
-                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s"></span>
-                        <b class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s"></b>
-                    </p>
-                    <div class="swiper-one-txt ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.5s" swiper-animate-delay="2s">寻求一份前端工程师的工作</div>
-                    <p class="ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
-                        <span class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s"></span>
-                        <b class="ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3.5s"></b>
-                    </p>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-two-bg"><div class="swiper-two-opacity"></div></div>
-                <div id="swiper-two">
-                    <h2 class="ani" swiper-animate-effect="swing" swiper-animate-duration="2s">基本资料</h2>
-                    <div class="swiper-two-list">
-                        <div class="swiper-two-lists">
-                            <img src="images/glass.png" width="100" class="ani" swiper-animate-effect="rotateIn-1" swiper-animate-duration="1s">
-                            <p class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s">基本信息</p>
-                            <span class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s">姓名:郭志迪 男</span>
-                            <span class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1s">年龄:25岁 家乡:河南</span>
-                        </div>
-                        <div class="swiper-two-lists">
-                            <img src="images/hat.png" width="100" class="ani" swiper-animate-effect="rotateIn-1" swiper-animate-duration="1s" swiper-animate-delay="1s">
-                            <p class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1s">毕业院校</p>
-                            <span class="ani" swiper-animate-effect="zoomInRight" swiper-animate-duration="1s" swiper-animate-delay="1s">河南理工大学</span>
-                            <span>&nbsp;</span>
-                        </div>
-                        <div class="swiper-two-lists">
-                            <img src="images/book.png" width="100" class="ani" swiper-animate-effect="rotateIn-1" swiper-animate-duration="1s" swiper-animate-delay="2s">
-                            <p class="ani" swiper-animate-effect="zoomInDown" swiper-animate-duration="1s" swiper-animate-delay="2s">学历和技能</p>
-                            <span class="ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">学历:本科</span>
-                            <span class="ani" swiper-animate-effect="zoomInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">技能:编程</span>
-                            <span>&nbsp;</span>
-                        </div>
-                        <div class="swiper-two-lists">
-                            <img src="images/tel.png" width="100" class="ani" swiper-animate-effect="rotateIn-1" swiper-animate-duration="1s" swiper-animate-delay="3s">
-                            <p class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">联系方式</p>
-                            <span class="ani" swiper-animate-effect="slideInLeft" swiper-animate-duration="1s" swiper-animate-delay="3s">电话:150****8256</span>
-                            <span class="ani" swiper-animate-effect="slideInRight" swiper-animate-duration="1s" swiper-animate-delay="3s">Email:190977235<br>2@qq.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-three-bg"><div class="swiper-three-opacity"></div></div>
-                <div id="swiper-three">
-                    <h2 class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s">技能简述</h2>
-                    <div class="swiper-three ani" swiper-animate-effect="bounce1" swiper-animate-duration="10s">
-                        <p><em class="iconfont">&#xe609;</em><span>HTML</span></p>
-                        <p><em class="iconfont">&#xe608;</em><span>CSS</span></p>
-                        <p><em class="iconfont">&#xe60b;</em><span>HTML5</span></p>
-                        <p><em class="iconfont">&#xe602;</em><span>CSS3</span></p>
-                        <p><em class="iconfont">&#xe603;</em><span>Javascript</span></p>
-                        <p><em class="iconfont">&#xe634;</em><span>JQuery</span></p>
-                        <p><em class="iconfont">&#xe600;</em><span>Gulp</span></p>
-                        <p><em class="iconfont">&#xe624;</em><span>Angular JS</span></p>
-                        <p><em class="iconfont">&#xe625;</em><span>SASS</span></p>
-                        <p><em class="iconfont">&#xe62a;</em><span>React</span></p>
-                        <p><em class="iconfont">&#xe642;</em><span>Bootstrap</span></p>
-                        <p><em class="iconfont">&#xe641;</em><span>Swiper</span></p>
-                        <p><em class="iconfont">&#xe61a;</em><span>LESS</span></p>
-                        <p><em class="iconfont">&#xe626;</em><span>ionic</span></p>
-                        <p><em class="iconfont">&#xe629;</em><span>git</span></p>
-                    </div>
-                    <b class="swiper-three-detail ani" swiper-animate-effect="hinge" swiper-animate-duration="1s" swiper-animate-delay="3s">详情请参考主要技能页面</b>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="swiper-four-bg"><div class="swiper-four-opacity"></div></div>
-                <div id="swiper-four">
-                    <h2 class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s">教育经历</h2>
-                    <div class="swiper-four ani">
-                        
-                    </div>
-                    <button id="enter" class="ani" swiper-animate-effect="rotateIn-2" swiper-animate-duration="1s"  swiper-animate-delay="2s">进入主页</button>
-                </div>
-            </div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-    </div>
 
-    <div id="mainContent">
-        <div id="header">skill</div>
-        <div id="wrapper">
-            <div id="scroller">
-               
-            </div>
-        </div>
+<body ng-app="foodModule">
+    <ui-view></ui-view>
 
-        <div id="footer">
-            <div class="button" id="skill">技能</div>
-            <div class="button" id="project">作品</div>
-            <div class="button" id="work">经历</div>
-            <div class="button" id="">兴趣</div>
-            <div class="button" id="">我的</div>
-        </div>
-    </div>
-	<script type="text/javascript" src="js/index.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="js/ngFlowGrid.js"></script>
+    <script type="text/javascript" src="js/angular-ui-router.js"></script>
+    <script type="text/javascript">
+        var foodApp = angular.module('foodModule',['ui.router','ngSanitize','ngFlowGrid'])
+        .run(function($rootScope, $state, $stateParams) {
+            $rootScope.foodPrefix = "http://tnfs.tngou.net/image";
+
+            $rootScope.$state = $state;
+            $rootScope.$stateParams = $stateParams;
+            $rootScope.$on("$stateChangeSuccess", function(event, toState, toParams, fromState, fromParams) {
+                // to be used for back button //won't work when page is reloaded.
+                $rootScope.previousState_name = fromState.name;
+                $rootScope.previousState_params = fromParams;
+            });
+            //back button function called from back button's ng-click="back()"
+            $rootScope.back = function(obj) {
+              if($rootScope.previousState_name.trim().length != 0){
+                $state.go($rootScope.previousState_name, $rootScope.previousState_params);
+                // $state.go('^');
+              }else{
+                // alert('没有可返回的页面!');
+                $('#'+obj).popover('show');
+
+              }
+            };
+        })
+        .directive("compile", function($compile) {
+            return function(scope,element,attrs){
+              scope.$watch(
+                function(scope){
+                  return scope.$eval(attrs.compile);
+                },
+                function(value){
+                  element.html(value);
+                  $compile(element.contents())(scope);
+                }
+              )
+            }
+        })
+        .config(function($stateProvider,$urlMatcherFactoryProvider,$locationProvider,$urlRouterProvider){
+            $urlMatcherFactoryProvider.caseInsensitive(true);
+            $urlRouterProvider.otherwise('/navbar/home');  //默认页
+            $stateProvider
+            .state("navbar",{
+                url:"/navbar",
+                templateUrl:"template/navbar.html",
+                controller:"navbarController",
+                resolve:{
+                    foodCate:function($http){
+                        return $http({
+                            url:'./baidu-api/foodindex.php',
+                            method:'get'
+                        }).then(function(response){
+                            return response;
+                        })
+                    },
+                    infoCate:function($http){
+                        return $http({
+                            url:'./baidu-api/infoindex.php',
+                            method:'get'
+                        }).then(function(response){
+                            return response;
+                        })
+                    }
+                }
+            })
+            .state("navbar.home",{
+                url:"/home",
+                templateUrl:"template/home.html",
+                controller:"homeController"
+            })
+            .state("navbar.drug",{
+                url:"/drug",
+                templateUrl:"template/drug.html",
+                controller:"drugController",
+                resolve:{
+                    drugindexMsg:function($http,$stateParams){
+                        return $http({
+                                    url:'./baidu-api/drugindex.php',
+                                    method:'get',
+                                }).then(function(response){
+                                    return response;
+                                })
+                    }
+                }
+            })
+            .state("navbar.drugList",{
+                url:"/drugList/:id/:page",
+                templateUrl:"template/drugList.html",
+                controller:"drugListController",
+                resolve:{
+                    drugListMsg:function($http,$stateParams){
+                        var rows = 20;
+                        var params = {
+                            id:$stateParams.id,
+                            page:$stateParams.page,
+                            rows:rows
+                        };
+                        return $http({
+                                    url:'./baidu-api/drugList.php',
+                                    method:'get',
+                                    params:params
+                                }).then(function(response){
+                                    var pageCountList = [];
+                                    var x=Math.ceil(response.data.total/rows);
+                                    for(var i=1;i<x;i++){
+                                        if(i<=10){pageCountList.push(i);}
+                                    }
+                                    return {
+                                                pageCountList:pageCountList,
+                                                response:response,
+                                                drugCateID:$stateParams.id
+                                            };
+                                })
+                    }
+                }
+            })
+            .state("navbar.infoList",{
+                url:"/infoList/:id/:page",
+                templateUrl:"template/infoList.html",
+                controller:"infoListController",
+                resolve:{
+                    infoListMsg:function($http,$stateParams){
+                        var rows = 30;
+                        var params = {
+                            id:$stateParams.id,
+                            page:$stateParams.page,
+                            rows:rows
+                        };
+                        return $http({
+                                    url:'./baidu-api/infolist.php',
+                                    method:'get',
+                                    params:params
+                                }).then(function(response){
+                                    var pageCountList = [];
+                                    var x=Math.ceil(response.data.total/rows);
+                                    for(var i=1;i<x;i++){
+                                        pageCountList.push(i);
+                                    }
+                                    return {
+                                                pageCountList:pageCountList,
+                                                response:response,
+                                                infoCateID:$stateParams.id
+                                            };
+                                })
+                    }
+                }
+            })
+            .state("navbar.infoDetail",{
+                url:"/infoDatail/:id",
+                templateUrl:"template/infoDetail.html",
+                controller:"infoDetailController",
+                resolve:{
+                    infoDetailMsg:function($http,$stateParams){
+                        return $http({
+                                    url:'./baidu-api/infodetail.php',
+                                    method:'get',
+                                    params:{
+                                        id:$stateParams.id
+                                    }
+                                }).then(function(response){
+                                    return response;
+                                })
+                    }
+                }
+            })
+            .state("navbar.foodList",{
+                url:"/foodList/:id/:page",
+                templateUrl:"template/foodList.html",
+                controller:"foodListController",
+                resolve:{
+                    foodListMsg:function($http,$stateParams){
+                        //初始化参数设置，id为分类的id，page为第几页，rows为每页记录数
+                        var rows = 30;
+                        //console.log($stateParams);
+                        var params = {
+                            id:$stateParams.id,
+                            page:$stateParams.page,
+                            rows:rows
+                        };
+                       return $http({
+                                    url:'./baidu-api/foodlist.php',
+                                    method:'get',
+                                    params:params
+                                }).then(function(response){
+                                    console.log(response);
+                                    var pageCountList = [];
+                                    var x=Math.ceil(response.data.total/rows);
+                                    for(var i=1;i<x;i++){
+                                        pageCountList.push(i);
+                                    }
+                                    return {
+                                                pageCountList:pageCountList,
+                                                response:response,
+                                                foodCateID:$stateParams.id
+                                            };
+                                })
+                    }
+                }
+            })
+            .state("navbar.foodDetail",{
+                url:"/foodDatail/:id",
+                templateUrl:"template/foodDetail.html",
+                controller:"foodDetailController",
+                resolve:{
+                    foodDetailMsg:function($http,$stateParams){
+                        return $http({
+                                    url:'./baidu-api/fooddetail.php',
+                                    method:'get',
+                                    params:{
+                                        id:$stateParams.id
+                                    }
+                                }).then(function(response){
+                                    return response;
+                                })
+                    }
+                }
+            })
+            .state("navbar.knowledge",{
+                url:"/knowledge",
+                templateUrl:"template/knowledge.html",
+                controller:"knowledgeController",
+                resolve:{
+                    knowledgeMsg:function($http,$stateParams){
+                        return $http({
+                                    url:'./baidu-api/knowledge.php',
+                                    method:'get'
+                                }).then(function(response){
+                                    return response;
+                                })
+                    }
+                }
+            })
+        })
+        .controller("navbarController",function($scope,foodCate,infoCate){
+            $scope.foodCategory = foodCate.data.tngou;
+            $scope.infoCategory = infoCate.data.tngou;
+        })
+        .controller("homeController",function($scope){
+            
+        })
+        .controller("drugController",function($scope,drugindexMsg){
+            //console.log(drugindexMsg);
+            $scope.drugLists =drugindexMsg.data.tngou;
+        })
+        .controller("drugListController",function($scope,drugListMsg){
+            //console.log(drugListMsg.response.data.tngou);
+            $scope.drugListDetail = drugListMsg.response.data.tngou;
+            $scope.drugCateID = drugListMsg.drugCateID;
+            $scope.drugListsPageCount = drugListMsg.pageCountList;
+            $scope.sortup = "+";
+            $scope.priceName = "price";
+            $scope.sort = function(priceName){
+                if($scope.sortup == "-"){
+                    $scope.sortup = "+";
+                }else{
+                    $scope.sortup = "-";
+                }
+                $scope.priceName = priceName;
+            }
+            $scope.getSortArrow = function(priceName){
+                if($scope.priceName == priceName){
+                    if($scope.sortup == '+'){
+                        return 'icon-sort-up';
+                    }else{
+                        return 'icon-sort-down';
+                    }
+                }
+                
+            }
+        })
+        .controller("infoListController",function($scope,infoListMsg){
+            $scope.infoLists =infoListMsg.response.data.tngou;
+            $scope.infoCateID = infoListMsg.infoCateID;
+            $scope.infoListsPageCount = infoListMsg.pageCountList;
+        })
+        .controller("infoDetailController",function($scope,infoDetailMsg){
+            $scope.infoDetail = infoDetailMsg.data;
+            $scope.myHtml = infoDetailMsg.data.message;
+            $scope.goBack = function(){
+                window.history.back();
+            }
+        })        
+        .controller("foodListController",function($scope,foodListMsg){
+            $scope.foodLists =foodListMsg.response.data.tngou;
+            $scope.foodCateID = foodListMsg.foodCateID;
+            $scope.foodListsPageCount = foodListMsg.pageCountList;
+        })
+        .controller("foodDetailController",function($scope,$sce,foodDetailMsg){
+            $scope.footDetail = foodDetailMsg.data;
+            $scope.myHtml = foodDetailMsg.data.message;
+            $scope.goBack = function(){
+                window.history.back();
+            }
+        })
+        .controller("knowledgeController",function($scope,$sce,knowledgeMsg){
+            console.log(knowledgeMsg);
+            $scope.knowledges = knowledgeMsg.data.list;
+        })
+        
+    </script>
 </body>
 </html>
+<!-- 
+    1 新建module
+    2 编写config
+    3 建立controller
+    4 body ng-app
+    5 写下ui-view
+ -->
