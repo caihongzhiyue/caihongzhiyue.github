@@ -3262,6 +3262,11 @@ h2 {
     background-position: 50% 50%;
     background-origin: content-box; }
 
+#interestCanvas {
+  height: 100%;
+  background: #1F334B;
+  display: none; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3314,7 +3319,8 @@ body {
   top: 45px;
   bottom: 45px;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  background: #1F334B; }
 
 /*iscroll布局====skill布局*/
 #scroller {
@@ -3354,6 +3360,16 @@ body {
 #scroller ul li {
   width: 100%;
   height: 50px; }
+
+#scroller .mine {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-indent: 20px;
+  padding: 10px; }
+
+#scroller .mine p {
+  padding-top: 10px; }
 
 /*iconfont*/
 @font-face {
