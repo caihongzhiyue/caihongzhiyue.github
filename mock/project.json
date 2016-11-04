@@ -1,20 +1,18 @@
 [
 	{
-		"category":"购物网站",
-		"name":"贝贝网",
-		"url":"http://www.beibei.com/",
-		"image":"images/index-page.jpg",
-		"description":"",
-		"detail":"",
-		"tech":""
+		"name":"余盆官网（PC端 已上线）",
+		"url":"https://www.yupen.com/",
+		"image":"images/yupen-pc.jpg",
+		"description":"这是一家信用数据整合服务、咨询、业务扩展于一体的综合性现代金融服务网站。而且不断探索新型的小微借款服务模式，建立了个人对个人小微借款交易促成平台。目前平台已经成功促成数万笔借贷交易，为两端客户提供了专业、高效的支持服务，促进了社会诚信体系建设与社会和谐。可以让客户在网上看到公司出借的最新信息，并且可以了解余盆动态，登录后可以对账户的资金进行出借等操作。",
+		"skill":"<p class='projectTxt'>应用技术</p><p>1. 标准HTML及CSS页面布局；</p><p>2. 适应各种屏幕分辨率；</p><p>3. 兼容各种浏览器</p><p>4. 应用最新CSS3和HTML5技术</p>",
+		"total":"<p class='projectTxt'>项目总结</p><p>1.接触到前端这个神奇的行业，掌握前端的语言，可以进行自主开发；</p><p>2.熟悉了动态网站的开发，能够配合后台开发人员进行修改及更新；</p><p>3.在项目发布之后，协助开发人员解决前端问题，积累经验；</p><p>4.掌握使用前段基本的语言编辑工具；</p><p>5.熟练使用photoshop图片切割工具；</p>"
 	},
 	{
-		"category":"购物网站",
-		"name":"贝贝网",
-		"url":"http://www.beibei.com/",
-		"image":"images/index.jpg",
-		"description":"",
-		"detail":"",
-		"tech":""
+		"name":"余盆（移动APP 已上线）",
+		"url":"https://www.yupen.com/",
+		"image":"images/yupen-app.jpg",
+		"description":"余盆APP是一款理财软件，收益高且安全，操作便捷，而且时时能查看到自己的收益，且安全性高、保障资金安全。用户可以通过APP享受到公司推出的一站式财富管理咨询平台，出借人可以通过余盆财富管理服务将闲置的资金借给有信誉的用户，以此来提高资金的流动率和利用率。",
+		"skill":"<p class='projectTxt'>应用技术</p><p>1. 采用Flex弹性伸缩布局</p><p>2. 首页年化收益数据模块，采用ajax获取后台数据；</p><p>3. 分类信息模块图标用Iconfont实现页面资源优化；</p><p>4. 使用git版本管理工具；</p><p>5. 使用zepto对事件进行处理，提升用户体验效果；</p>",
+		"total":"<p class='projectTxt'>项目总结</p><p>1. 对移动端进行了项目实践，并且认识到团队进行模块化开发的效率;</p><p>2.对弹性伸缩布局和流式布局之间的认识更加深刻；</p><p>3.整个项目运用到了iScroll类库，实现下拉刷新的功能；</p>"
 	}
 ]
